@@ -48,6 +48,9 @@ var guessesLeft = 10;
           wins++;
           guessesLeft = 10;
           guesses = [];
+          computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+          console.log(computerChoice);
+
       }else{
           guessesLeft--;
           guesses.push(" " + userGuess);
@@ -58,6 +61,10 @@ var guessesLeft = 10;
           losses++
           guessesLeft =10;
           guesses= [];
+          computerChoice;
+          computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+          console.log(computerChoice);
+
     }
   
     document.getElementById('wins').innerHTML = "Wins: " + wins;
