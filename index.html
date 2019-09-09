@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Psychic Game</title>
 </head>
 <body>
@@ -65,15 +66,15 @@ var guessesLeft = 10;
           computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
           console.log(computerChoice);
 
-    }
+      }
   
-    document.getElementById('wins').innerHTML = "Wins: " + wins;
-    document.getElementById('losses').innerHTML = "losses: " + losses;
-    document.getElementById('guessesLeft').innerHTML = "Guesses left: " + guessesLeft;  
-    document.getElementById('guesses').innerHTML = "You've Guessed: " + guesses;
+        document.getElementById('wins').innerHTML = "Wins: " + wins;
+        document.getElementById('losses').innerHTML = "losses: " + losses;
+        document.getElementById('guessesLeft').innerHTML = "Guesses left: " + guessesLeft;  
+        document.getElementById('guesses').innerHTML = "You've Guessed: " + guesses;
 
     
-}
+    }
   
   </script>
   
